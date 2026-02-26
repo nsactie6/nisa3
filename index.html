@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEFA SMKN 1 GONDANG NGANJUK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --purple-dark: #3c096c;
+            --purple-mid: #7b2cbf;
+            --purple-light: #e0aaff;
+        }
+
+        body { font-family: 'Poppins', sans-serif; background-color: #f8f9fa; }
+        
+        .navbar { background-color: var(--purple-dark) !important; }
+        
+        .hero {
+            background: linear-gradient(rgba(60, 9, 108, 0.8), rgba(60, 9, 108, 0.8)), 
+                        url('WhatsApp Image 2026-02-23 at 10.26.04.jpeg');
+            background-size: cover; background-position: center;
+            color: white; padding: 100px 0; text-align: center;
+        }
+
+        .section-title { color: var(--purple-dark); font-weight: 800; margin-bottom: 40px; text-align: center; }
+        
+        /* Card Styling */
+        .card-jurusan { border: none; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s; height: 100%; }
+        .card-jurusan:hover { transform: translateY(-10px); background-color: var(--purple-light); }
+        .card-img-top { height: 200px; object-fit: cover; border-radius: 15px 15px 0 0; }
+
+        /* Guru Section */
+        #guru { background-color: white; padding: 60px 0; }
+        .table-purple thead { background-color: var(--purple-mid); color: white; }
+
+        /* Kontak Section */
+        #kontak { background-color: var(--purple-dark); color: white; padding: 60px 0; }
+        .contact-box { background: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">SMKN 1 GONDANG</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#jurusan">Jurusan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#guru">Daftar Guru</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Teaching Factory (TEFA)</h1>
+            <p class="lead">Pusat Keunggulan SMKN 1 Gondang Nganjuk</p>
+        </div>
+    </header>
+
+    <section id="jurusan" class="container py-5">
+        <h2 class="section-title">7 Program Keahlian</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card card-jurusan">
+                    <img src="WhatsApp Image 2026-02-23 at 10.26.04.jpeg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">AMP</h5>
+                        <p class="small">Alat Mekanisasi Pertanian</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-jurusan">
+                    <img src="WhatsApp Image 2026-02-23 at 10.26.04 (1).jpeg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">ATPH</h5>
+                        <p class="small">Agribisnis Tanaman Pangan & Hortikultura</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-jurusan">
+                    <img src="WhatsApp Image 2026-02-23 at 10.26.05.jpeg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">ATU</h5>
+                        <p class="small">Agribisnis Ternak Unggas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-jurusan">
+                    <img src="WhatsApp Image 2026-02-23 at 10.26.05 (1).jpeg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">TKR</h5>
+                        <p class="small">Teknik Kendaraan Ringan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-jurusan">
+                    <img src="WhatsApp Image 2026-02-23 at 10.26.06.jpeg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">APHP</h5>
+                        <p class="small">Agribisnis Pengolahan Hasil Pertanian</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-jurusan">
+                    <img src="WhatsApp Image 2026-02-23 at 10.26.06 (1).jpeg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">TKJ</h5>
+                        <p class="small">Teknik Komputer Jaringan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mx-auto">
+                <div class="card card-jurusan">
+                    <img src="WhatsApp Image 2026-02-23 at 10.26.07.jpeg" class="card-img-top">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">TSM</h5>
+                        <p class="small">Teknik Sepeda Motor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="guru">
+        <div class="container">
+            <h2 class="section-title">Informasi Guru & Staf</h2>
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered table-purple">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Jabatan / Unit Kerja</th>
+                            <th>Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Kepala Sekolah</td>
+                            <td>Pimpinan Utama SMKN 1 Gondang</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Ketua Program Keahlian (K3)</td>
+                            <td>Koordinator masing-masing 7 Jurusan</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Guru Produktif</td>
+                            <td>Tenaga Ahli Praktik Industri</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Guru Umum</td>
+                            <td>Tenaga Pendidik Normatif & Adaptif</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Staf Tata Usaha</td>
+                            <td>Administrasi & Layanan Siswa</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak">
+        <div class="container">
+            <h2 class="section-title text-white">Hubungi Kami</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="contact-box">
+                        <h5><i class="fas fa-map-marker-alt me-2"></i> Alamat</h5>
+                        <p>Jl. Raya Gondang-Lengkong, Desa Balonggebang, Kec. Gondang, Nganjuk, Jawa Timur.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box">
+                        <h5><i class="fas fa-phone me-2"></i> Telepon</h5>
+                        <p>(0358) 611612</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box">
+                        <h5><i class="fas fa-envelope me-2"></i> Email</h5>
+                        <p>smkn1gondang@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <p>Ikuti kami di media sosial: 
+                    <i class="fab fa-facebook mx-2 fs-4"></i> 
+                    <i class="fab fa-instagram mx-2 fs-4"></i> 
+                    <i class="fab fa-youtube mx-2 fs-4"></i>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <small>&copy; 2026 SMK Negeri 1 Gondang Nganjuk</small>
+    </footer>
+
+</body>
+</html>
