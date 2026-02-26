@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEFA SMKN 1 GONDANG NGANJUK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --deep-purple: #2D033B;
+            --main-purple: #810CA1;
+            --light-purple: #C147E9;
+            --soft-bg: #F8F4FF;
+        }
+
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: var(--soft-bg); 
+            color: #2D033B;
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Modern */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, rgba(45, 3, 59, 0.9), rgba(129, 12, 161, 0.7)), 
+                        url('WhatsApp Image 2026-02-23 at 10.26.04.jpeg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        }
+
+        .hero h1 { font-weight: 800; font-size: 3.5rem; letter-spacing: -1px; }
+
+        /* Stats Section */
+        .stats-bar {
+            background: white;
+            border-radius: 24px;
+            padding: 35px;
+            margin-top: -60px;
+            box-shadow: 0 15px 35px rgba(129, 12, 161, 0.1);
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Info Card */
+        .info-card {
+            background: var(--deep-purple);
+            color: white;
+            padding: 40px;
+            border-radius: 30px;
+            height: 100%;
+            border-left: 8px solid var(--light-purple);
+        }
+
+        .badge-akreditasi {
+            background: var(--light-purple);
+            padding: 10px 25px;
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: 1.5rem;
+            display: inline-block;
+        }
+
+        /* Department Cards */
+        .card-jurusan {
+            border: none;
+            border-radius: 24px;
+            background: white;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+        }
+
+        .card-jurusan:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(129, 12, 161, 0.15);
+        }
+
+        .img-container { height: 230px; overflow: hidden; position: relative; }
+        .card-img-top { width: 100%; height: 100%; object-fit: cover; }
+        
+        .overlay-badge {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-weight: 700;
+            color: var(--main-purple);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .card-body h5 { color: var(--deep-purple); font-weight: 700; }
+        .desc-text { font-size: 0.88rem; line-height: 1.6; color: #555; }
+
+        footer { background: var(--deep-purple); color: #E5B8F4; padding: 60px 0 30px; }
