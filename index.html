@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEFA SMKN 1 GONDANG NGANJUK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --deep-purple: #2D033B;
+            --main-purple: #810CA1;
+            --light-purple: #C147E9;
+            --soft-bg: #F8F4FF;
+        }
+
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: var(--soft-bg); 
+            color: #2D033B;
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Modern */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, rgba(45, 3, 59, 0.9), rgba(129, 12, 161, 0.7)), 
+                        url('WhatsApp Image 2026-02-23 at 10.26.04.jpeg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        }
+
+        .hero h1 { font-weight: 800; font-size: 3.5rem; letter-spacing: -1px; }
+
+        /* Card Glassmorphism */
+        .card-jurusan {
+            border: none;
+            border-radius: 24px;
+            background: white;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(129, 12, 161, 0.05);
+        }
+
+        .card-jurusan:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(129, 12, 161, 0.15);
+        }
+
+        .img-container { height: 280px; overflow: hidden; position: relative; }
+        .card-img-top { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .card-jurusan:hover .card-img-top { transform: scale(1.1); }
+
+        .overlay-badge {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: 700;
+            color: var(--main-purple);
+            font-size: 0.8rem;
+        }
+
+        /* Stats Section */
+        .stats-bar {
+            background: white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: -50px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Teacher Section */
+        .teacher-box {
+            background: var(--deep-purple);
+            color: white;
+            padding: 40px;
+            border-radius: 30px;
+        }
+
+        .btn-purple {
+            background: var(--main-purple);
+            color: white;
+            border-radius: 50px;
+            padding: 12px 30px;
+            font-weight: 600;
+            border: none;
+        }
+
+        footer { background: var(--deep-purple); color: #E5B8F4; padding: 60px 0 20px; }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="container text-center">
+            <span class="badge bg-light text-dark mb-3 px-3 py-2 rounded-pill fw-bold">Pusat Keunggulan Nganjuk</span>
+            <h1>SMKN 1 GONDANG</h1>
+            <p class="lead mb-4">Teaching Factory (TEFA): Sinergi Pendidikan & Industri Nyata</p>
+            <a href="#jurusan" class="btn btn-light btn-lg rounded-pill px-5 fw-bold text-purple">Jelajahi Jurusan</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="stats-bar text-center">
+            <div class="row">
+                <div class="col-md-3 border-end"><h3>7</h3><p class="text-muted mb-0">Jurusan Unggulan</p></div>
+                <div class="col-md-3 border-end"><h3>10+</h3><p class="text-muted mb-0">Mitra Industri</p></div>
+                <div class="col-md-3 border-end"><h3>100%</h3><p class="text-muted mb-0">Fasilitas Standar DUDI</p></div>
+                <div class="col-md-3"><h3>1000+</h3><p class="text-muted mb-0">Lulusan Kompeten</p></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container py-5 mt-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h6 class="text-purple fw-bold text-uppercase">Tentang Kami</h6>
+                <h2 class="display-6 fw-bold mb-4">Membangun Masa Depan Melalui Vokasi</h2>
+                <p>SMKN 1 Gondang Nganjuk adalah sekolah kejuruan yang berdedikasi tinggi pada pengembangan karakter dan keterampilan teknis siswa. Dengan program Teaching Factory (TEFA), kami menghadirkan ekosistem kerja industri langsung ke dalam sekolah.</p>
+                <div class="d-flex align-items-start mb-3">
+                    <div class="bg-purple text-white p-2 rounded-circle me-3"><i class="fas fa-check"></i></div>
+                    <div><strong>Visi:</strong> Menjadi lembaga pendidikan kejuruan yang religius, profesional, dan berdaya saing global.</div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="teacher-box text-center">
+                    <i class="fas fa-users-rectangle display-1 mb-4 text-light-purple"></i>
+                    <h3>Tenaga Pendidik</h3>
+                    <p>Dibimbing oleh guru produktif tersertifikasi industri yang ahli di bidangnya masing-masing.</p>
+                    <ul class="list-unstyled text-start d-inline-block">
+                        <li><i class="fas fa-user-tie me-2"></i> Guru Produktif Teknik</li>
+                        <li><i class="fas fa-user-tie me-2"></i> Guru Produktif Pertanian</li>
+                        <li><i class="fas fa-user-tie me-2"></i> Guru Umum & Karakter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="jurusan" class="container py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Program Keahlian</h2>
+            <p class="text-muted">7 Bidang Keahlian dengan Fasilitas Modern</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card-jurusan h-100">
+                    <div class="img-container">
+                        <img src="WhatsApp Image 2026-02-23 at 10.26.04.jpeg" class="card-img-top">
+                        <span class="overlay-badge">TEKNOLOGI TANI</span>
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold">AMP</h5>
+                        <p class="small text-muted">Alat Mekanisasi Pertanian: Menguasai teknologi mesin traktor dan alat modern pertanian.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-jurusan h-100">
+                    <div class="img-container">
+                        <img src="WhatsApp Image 2026-02-23 at 10.26.04 (1).jpeg" class="card-img-top">
+                        <span class="overlay-badge">AGRIBISNIS</span>
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold">ATPH</h5>
+                        <p class="small text-muted">Agribisnis Tanaman Pangan & Holtikultura: Ahli budidaya dan pemasaran tanaman pangan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-jurusan h-100">
+                    <div class="img-container">
+                        <img src="WhatsApp Image 2026-02-23 at 10.26.05.jpeg" class="card-img-top">
+                        <span class="overlay-badge">PETERNAKAN</span>
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold">ATU</h5>
+                        <p class="small text-muted">Agribisnis Ternak Unggas: Pengelolaan peternakan modern dan manajemen pakan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-jurusan h-100">
+                    <div class="img-container">
+                        <img src="WhatsApp Image 2026-02-23 at 10.26.05 (1).jpeg" class="card-img-top">
+                        <span class="overlay-badge">OTOMOTIF</span>
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold">TKR</h5>
+                        <p class="small text-muted">Teknik Kendaraan Ringan: Spesialisasi perawatan dan perbaikan mesin mobil.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-jurusan h-100">
+                    <div class="img-container">
+                        <img src="WhatsApp Image 2026-02-23 at 10.26.06.jpeg" class="card-img-top">
+                        <span class="overlay-badge">PENGOLAHAN</span>
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold">APHP</h5>
+                        <p class="small text-muted">Agribisnis Pengolahan Hasil Pertanian: Inovasi pangan dan wirausaha produk tani.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card-jurusan h-100">
+                    <div class="img-container">
+                        <img src="WhatsApp Image 2026-02-23 at 10.26.06 (1).jpeg" class="card-img-top">
+                        <span class="overlay-badge">TEKNOLOGI IT</span>
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold">TKJ</h5>
+                        <p class="small text-muted">Teknik Komputer Jaringan: Membangun infrastruktur server dan keamanan jaringan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mx-auto">
+                <div class="card-jurusan h-100">
+                    <div class="img-container">
+                        <img src="WhatsApp Image 2026-02-23 at 10.26.07.jpeg" class="card-img-top">
+                        <span class="overlay-badge">BENGKEL RESMI</span>
+                    </div>
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold">TSM</h5>
+                        <p class="small text-muted">Teknik Sepeda Motor: Perawatan motor injeksi dan standar bengkel industri.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Hubungi Kami</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <i class="fas fa-location-dot fs-3 text-purple mb-3"></i>
+                    <p>Jl. Raya Gondang-Lengkong, Desa Balonggebang, Kab. Nganjuk</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-phone fs-3 text-purple mb-3"></i>
+                    <p>(0358) 611612</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-envelope fs-3 text-purple mb-3"></i>
+                    <p>info@smkn1gondang-ngj.sch.id</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <h4 class="fw-bold text-white mb-4">SMKN 1 GONDANG</h4>
+            <div class="fs-3 mb-4">
+                <i class="fab fa-facebook mx-2 pointer"></i>
+                <i class="fab fa-instagram mx-2 pointer"></i>
+                <i class="fab fa-youtube mx-2 pointer"></i>
+            </div>
+            <hr class="opacity-25">
+            <p class="small mb-0">&copy; 2026 TEFA SMKN 1 Gondang Nganjuk. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
